@@ -1,10 +1,19 @@
 help()
 {
 echo "Lista dostępnych opcji: "
+<<<<<<< HEAD
 echo "--date / -d #wyświetli dzisiejszą datę"
 echo "--logs / -l utworzy automatycznie 100 plików logx.txt x-nrpliku od 1 do100 plik zawiera nazwę, nazwę skryptu, datę"
 echo "--logs a / -l a utworzy automatycznie a plików logx.txt x-nr pliku od 1 do 100 plik zawiera nazwę, nazwę skryptu, datę"
 echo "--help / -h wyświetli listę dostępnych opcji"
+=======
+echo "--date #wyświetli dzisiejszą datę"
+echo "--logs utworzy automatycznie 100 plików logx.txt x-nrpliku od 1 do100 plik zawiera nazwę, nazwę skryptu, datę"
+echo "--logs a utworzy automatycznie a plików logx.txt x-nr pliku od 1 do 100 plik zawiera nazwę, nazwę skryptu, datę"
+echo "--error utworzy automatycznie 100 plików errorx.txt x-nrpliku od 1 do100 pli>"
+echo "--errors a utworzy automatycznie a plików errorx.txt x-nr pliku od 1 do 100 p>"
+echo "--help wyświetli listę dostępnych opcji"
+>>>>>>> helpBranch
 }
 while [ "$1" != "" ];
 do
