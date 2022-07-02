@@ -34,6 +34,26 @@ do
 		--help|-h)
 				shift
 				help;;
+                --error|-e)
+                        z=$2
+                        if [ $# -eq 2 ];
+                        then
+                                shift
+                                for i in {1..$z};
+                                do
+                                        echo "error$i.txt">>error$i.txt
+                                        echo "skrypt.sh">>error$i.txt
+                                        echo date>>error$i.txt
+                                done
+                        else
+                                for i in `seq 1 100`; do
+                                        touch error$i.txt
+                                        echo "errror$i.txt">>error$i.txt
+                                        echo "skrypt.sh">>error$i.txt
+                                        echo date>>error$i.txt
+                                done
+                        fi;;
+
  *);; 
 	esac
 done
